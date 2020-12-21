@@ -2,18 +2,19 @@
 def getFuelLevel(json):
     return json["fuellevelpercent"]["value"]
 
+
 def getLocation(json):
-    liste = []
-    liste.append(json["longitude"]["value"])
-    liste.append(json["latitude"]["value"])
-    liste.append(json["heading"]["value"])
-    return liste
-    
+    location = []
+    location.append(json["longitude"]["value"])
+    location.append(json["latitude"]["value"])
+    location.append(json["heading"]["value"])
+    return location
+
+
 def getTirePressures(json):
-    liste = []
-    liste.append(json["tirepressurerearleft"]["value"])
-    liste.append(json["tirepressurerearright"]["value"])
-    liste.append(json["tirepressurefrontright"]["value"])
-    liste.append(json["tirepressurefrontleft"]["value"])
-    return liste
-    
+    tirePressures = []
+    tirePressures.append(json["tirepressurerearleft"]["value"])
+    tirePressures.append(json["tirepressurerearright"]["value"])
+    tirePressures.append(json["tirepressurefrontright"]["value"])
+    tirePressures.append(json["tirepressurefrontleft"]["value"])
+    return tirePressures
